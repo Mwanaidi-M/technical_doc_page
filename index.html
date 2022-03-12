@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Fauna+One&family=Fredoka:wght@500&family=Quattrocento&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    
+    <title>M-Technical</title>
+
+    <script src="https://kit.fontawesome.com/8c1f26615f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <header class="title">Random Fundamentals</header>
+        <ul>
+            <li>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#Cloud_Computing" class="nav-link">Cloud Computing</a>
+            </li>
+            <li>
+                <a href="#Azure" class="nav-link">Azure</a>
+            </li>
+            <li>
+                <a href="#Parent/Sibling_Combinators" class="nav-link">Parent/Sibling Combinators</a>
+            </li>
+            <li>
+                <a href="#Pseudo-selectors" class="nav-link">Pseudo-selectors</a>
+            </li>
+            <li>
+                <a href="#Pseudo-classes" class="nav-link">Pseudo-classes</a>
+            </li>
+            <li>
+                <a href="#Pseudo-elements" class="nav-link">Pseudo-elements</a>
+            </li>
+            <li>
+                <a href="#Attribute_Selectors" class="nav-link">Attribute Selectors</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+
+            <p>
+                Azure is a cloud computing platform with an ever-expanding set of services to help you build solutions 
+                to meet your business goals. Azure services range from simple web services for hosting your 
+                business presence in the cloud to running fully virtualized computers for you to run your custom 
+                software solutions. 
+            </p>
+            <p>
+                Azure provides a wealth of cloud-based services like remote storage, database hosting, and 
+                centralized account management. Azure also offers new capabilities like AI and 
+                <abbr title="Internet of Things">(IoT)</abbr>.
+            </p>
+            <p>
+                Azure fundamentals is a series of six learning paths that familiarize you to Azure and its many 
+                services and features.
+            </p>
+        </section>
+        <section id="Cloud_Computing" class="main-section">
+            <header>Cloud Computing</header>
+
+            <p>
+                Cloud computing is the delivery of computing services over the internet, which is otherwise known as 
+                the cloud. These services include servers, storage, databases, networking, software, analytics, and 
+                intelligence.
+            </p>
+            <p>
+                Cloud computing offers faster innovation, flexible resources, and economies of scale. It utitlizes the
+                pay-as-you-go pricing model i.e. you pay only for the cloud services you use, which helps you:
+            </p>
+            <ul>
+                <li>Lower your operating costs.</li>
+                <li>Run your infrastructure more efficiently.</li>
+                <li>Scale as your business needs change.</li>
+            </ul>
+            <p>
+                To power your services and deliver innovative and novel user experiences more quickly, 
+                the cloud provides on-demand access to:
+            </p>
+            <ul>
+                <li>A nearly limitless pool of raw compute, storage, and networking components.</li>
+                <li>Speech recognition and other cognitive services that help make your application stand out.</li>
+                <li>Analytics services that deliver telemetry data from your software and devices.</li>
+            </ul>
+        </section>
+        <section id="Azure" class="main-section">
+            <header>Azure</header>
+            <p>
+                Azure is a continually expanding set of cloud services that help your organization meet your 
+                current and future business challenges. Azure gives you the freedom to build, manage, and deploy 
+                applications on a massive global network using your favorite tools and frameworks.
+            </p>
+            <p>
+                The table below lists several of the benefits that Azure provides, so you can easily invent with purpose.
+            </p>
+            <table>
+                <caption>Benefits of Azure</caption>
+                <tr>
+                    <td>
+                        Continuous innovation from Microsoft supports your development today and your product visions
+                         for tomorrow.
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-table-cells-large fa-2xl"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-tablets fa-2xl"></i>
+                    </td>
+                    <td>
+                        With a commitment to open source, and support for all languages and frameworks, you can build 
+                        how you want and deploy where you want to.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Integrate and manage your environments with tools and services designed for a hybrid cloud solution.
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-receipt fa-2xl"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-outdent fa-2xl"></i>
+                    </td>
+                    <td>
+                        Get security from the ground up, backed by a team of experts, and proactive compliance trusted 
+                        by enterprises, governments, and startups.
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="Parent/Sibling_Combinators" class="main-section">
+            <header>Parent/Sibling Combinators</header>
+            <p>
+                These offer a way to access elements <em>without</em> referring to their classes. There are 3 selectors
+                 that do this:
+            </p>
+            <ul>
+                <li><span>&gt;</span> - the child combinator.</li>
+                <li><span>+ </span>- the adjacent sibling combinator.</li>
+                <li><span>~</span> - the general sibling combinator.</li>
+            </ul>
+            <p>
+                An example is if given a main parent element with divs inside and those divs having inner div as well,
+                if we wanted to select all the child and grand-child divs inside of main, we could write:
+            </p>
+            <pre>
+                <code>
+                    main div {
+                    /* styling CSS */
+                  }
+                </code>
+            </pre>
+            <p>
+                If we wanted to be more specific and select only the child or grand-child divs, the child combinator <strong>></strong>
+                comes in handy. Unlike the descendant combinator, it will only select direct children.The child selector 
+                will select an element that is one level of indentation down.
+            </p>
+            <pre>
+            <code>
+            /* This rule will only select divs with a class of child */
+            main > div {
+            /* Our cool CSS */
+            }
+            /* This rule will only select divs with a class of grand-child */
+            main > div > div {
+            /* More cool CSS */
+            }
+            </code>
+            </pre>
+            <p>
+                In order to select an element that is adjacent to our target, or on the same level of 
+                indentation, we can use the adjacent sibling combinator <strong>+</strong>.
+            </p>
+            <pre>
+            <code>
+            /* This rule will only select the div with the class child group2 */
+            .group1 + div {
+            /* Our cool CSS */
+            }
+
+            /* This rule will only select the div with the class child group3 */
+            .group1 + div + div {
+            /* More cool CSS */
+            }
+            </code>
+            </pre>
+            <p>
+                If we want to select all of an element's siblings and not just the first one, we can use 
+                the general sibling combinator <strong>~</strong>.
+            </p>
+            <pre>
+            <code>
+            /* This rule will select all of .group1's siblings - in this 
+            case the 2nd and 3rd .child divs*/
+            .group1 ~ div {
+            /* Our cool CSS */
+            }
+            </code>
+            </pre>
+        </section>
+        <section id="Pseudo-selectors" class="main-section">
+            <header>Pseudo-selectors</header>
+            <p>
+                Before diving into pseudo-selectors, a quick note on the difference between pseudo-elements 
+                and pseudo-classes.
+            </p>
+            <h4>What is a pseudo-class?</h4>
+            <p>
+                A pseudo-class is a selector that selects elements that are in a specific state, e.g. 
+                they are the first element of their type, or they are being hovered over by the mouse 
+                pointer. They tend to act as if you had applied a class to some part of your document, 
+                often helping you cut down on excess classes in your markup, and giving you more flexible, 
+                maintainable code.
+            </p>
+            <p>
+                They are prefixed with a single colon and are a different way to target elements that already 
+                exist in HTML. E.g.
+            </p>
+            <pre>
+            <code>
+            /* This will target the first paragraph in an article 
+            making it larger & bolder */
+            article p:first-child {
+                font-size: 120%;
+                font-weight: bold;
+            } 
+            </code>
+            </pre>
+            <h4>What is a pseudo-element?</h4>
+            <p>
+                Pseudo-elements are prefixed with two colons and are used to target elements that don’t 
+                normally exist in the markup. They act as if you had added a whole new HTML element into 
+                the markup, rather than applying a class to existing elements. E.g.
+            </p>
+            <pre>
+            <code>
+            /*This will target the first line of a paragraph and make it 
+            larger and bolder*/
+            article p::first-line {
+                font-size: 120%;
+                font-weight: bold;
+            } 
+            </code>
+            </pre>
+        </section>
+        <section id="Pseudo-classes" class="main-section">
+            <header>Pseudo-classes</header>
+            <p>
+                Pseudo-classes offer us different ways to target elements in our HTML. They come in a couple of different 
+                flavors. Some are based on their position or structure within the HTML. Others are based on the state 
+                of a particular element, or how the user is currently interacting with it.
+            </p>
+            <p>
+                Examples of Dynamic and User Action pseudo-classes that one will encounter are but not limited to:
+            </p>
+            <ul>
+                <li>
+                    <span>:focus</span> applies to an element that is currently selected by the user either through selecting 
+                    it with their cursor or using their keyboard.
+                </li>
+                <li>
+                    <span>:hover</span> will affect anything under the users mouse pointer. It can be used to give extra oomph to 
+                    buttons and links to highlight that they’re interactable, or to trigger a drop down menu.
+                </li>
+                <li>
+                    <span>:active</span> applies to elements that are currently being clicked, and is especially useful for 
+                    giving your user feedback that their action had an effect.
+                </li>
+            </ul>
+            <p>
+                Structural pseudo-classes are a powerful way to select elements based on their position 
+                within the DOM. E.g.
+            </p>
+            <ul>
+                <li>
+                    <span>:root</span> is generally the place where you will place your 'global' CSS rules that you want available 
+                    everywhere - such as your custom properties and CSS variables, or rules such as 
+                    box-sizing: border-box;
+                </li>
+                <li>
+                    <span>:first-child</span> and <span>:last-child</span> will match elements that are the first or last sibling.
+                </li>
+                <li>
+                    <span>:empty</span> and <span>:only-child</span> will match elements that have no children at all, or just one.
+                </li>
+                <li>
+                    <span>:nth-child</span> is a flexible pseudo-class with a few different uses and is dynamic.
+                </li>
+                <pre>
+                <code>
+                {/* Selects the 5th child of myList */}
+                .myList:nth-child(5)
+
+                { /* Selects every 3rd child of myList */}
+                .myList:nth-child(3n)
+
+                { /* Selects every 3rd child of myList, beginning with the 3rd */}
+                .myList:nth-child(3n + 3)
+
+                {/* Selects every even child of myList */}
+                .myList:nth-child(even)
+                </code>
+                </pre>
+            </ul>
+        </section>
+        <section id="Pseudo-elements" class="main-section">
+            <header>Pseudo-elements</header>
+            <p>
+                Pseudo-elements are more abstract in that they allow us to affect parts of our HTML that aren't 
+                elements at all. E.g.
+            </p>
+            <ul>
+                <li>
+                    <span>::marker</span> allows you to customize the styling of your <em>li</em> elements' bullets or numbers.
+                </li>
+                <li>
+                    <span>::first-letter</span> and <span>::first-line</span> allow you to give special styling to the first letter or 
+                    line of some text.
+                </li>
+                <li>
+                    <span>::before</span> and <span>::after</span> allow us to add extra elements onto the page with CSS, instead of 
+                    HTML. Using it to decorate text in various ways is one common use case.
+                </li>
+                <li>
+                    <span>::selection</span> allows you to change the highlighting when a user selects text on the page.
+                </li>
+            </ul>
+        </section>
+        <section id="Attribute_Selectors" class="main-section">
+            <header>Attribute Selectors</header>
+            <p>
+                An attribute is simply anything in the opening tag of an HTML element - such as 
+                <em>src='picture.jpg'</em>. Since we write our own values for attributes, we need a slightly more 
+                flexible system to be able to target specific values.
+            </p>
+            <p>
+                Some examples for basic usage:
+            </p>
+            <ul>
+                <li>
+                    <span>[attribute]</span> - This general selector will select anything where the given attribute exists. 
+                    Its value doesn't matter.
+                </li>
+                <li>
+                    <span>selector[attribute]</span> - Optionally we can combine our attribute selectors with other types 
+                    of selectors, such as class or element selectors.
+                </li>
+                <li>
+                    <span>[attribute="value"]</span> - To get really specific, we can use = to match a specific attribute 
+                    with a specific value.
+                </li>
+            </ul>
+            <p>
+                We may need to be more general in how we access these attributes. For example, perhaps we're only
+                 interested in img elements where the src attribute's value ends in .jpg. For cases like 
+                 this we have some attribute selectors that allow us to match a part of the attribute's value.
+            </p>
+            <ul>
+                <li>
+                    <span>[attribute^="value"]</span> - <strong>^=</strong> Will match strings from the start.
+                </li>
+                <li>
+                    <span>[attribute$="value"]</span> - <strong>$=</strong> Will match strings from the end.
+                </li>
+                <li>
+                    <span>[attribute*="value"]</span> - <strong>*=</strong> The wildcard selector will match anywhere 
+                    inside the string.
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy;2022 RTM &#9969;
+    </footer>
+    
+</body>
+</html>
