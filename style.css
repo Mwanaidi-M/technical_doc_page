@@ -28,7 +28,7 @@ td
     border: 2px solid #4C3B4D;
     padding: 10px;
     font-family: var(--section-content-font);
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 tr:nth-of-type(even)
 {
@@ -48,12 +48,12 @@ code
     width: 100%;
     background-color: #D9F0FF;
     color: #4D5359;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 span
 {
     font-family: 'Fredoka', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 i
 {
@@ -90,7 +90,7 @@ i
 
     color: #001427;
     font-family: var(--navbar-font);
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     letter-spacing: 1.7px;
 
     padding: 10px 20px;
@@ -99,7 +99,7 @@ i
 .nav-link:hover
 {
     color: #D17B88;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 }
 .main-section
 {
@@ -111,7 +111,7 @@ i
 .main-section header
 {
     font-family: var(--section-header-font);
-    font-size: 3rem;
+    font-size: 2.3rem;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -129,7 +129,7 @@ header + p::first-letter
 .main-section ul li
 {
     font-family: var(--section-content-font);
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5em;
     margin-bottom: 20px;
 }
@@ -186,11 +186,28 @@ footer
     .nav-link
     {
         padding: 20px;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .nav-link:hover
     {
-        font-size: 2rem;
+        font-size: 1.2rem;
+    }
+    .main-section header
+    {
+      font-size: 2rem;
+    }
+    .main-section p,
+    .main-section ul li,
+    table,
+    tr,
+    td
+        {
+        font-size: .9rem;
+        }
+    pre,
+    code
+    {
+        font-size: .8rem;
     }
     footer
     {

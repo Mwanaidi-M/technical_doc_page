@@ -170,11 +170,13 @@
             </p>
             <pre>
             <code>
-            /* This rule will only select divs with a class of child */
+            /* This rule will only select divs with a 
+            class of child */
             main > div {
             /* Our cool CSS */
             }
-            /* This rule will only select divs with a class of grand-child */
+            /* This rule will only select divs with 
+            a class of grand-child */
             main > div > div {
             /* More cool CSS */
             }
@@ -186,12 +188,14 @@
             </p>
             <pre>
             <code>
-            /* This rule will only select the div with the class child group2 */
+            /* This rule will only select the div 
+            with the class child group2 */
             .group1 + div {
             /* Our cool CSS */
             }
 
-            /* This rule will only select the div with the class child group3 */
+            /* This rule will only select the div
+            with the class child group3 */
             .group1 + div + div {
             /* More cool CSS */
             }
@@ -203,8 +207,8 @@
             </p>
             <pre>
             <code>
-            /* This rule will select all of .group1's siblings - in this 
-            case the 2nd and 3rd .child divs*/
+            /* This rule will select all of .group1's 
+            siblings - in this case the 2nd and 3rd .child divs*/
             .group1 ~ div {
             /* Our cool CSS */
             }
@@ -247,8 +251,8 @@
             </p>
             <pre>
             <code>
-            /*This will target the first line of a paragraph and make it 
-            larger and bolder*/
+            /*This will target the first line of a paragraph 
+            and make it larger and bolder*/
             article p::first-line {
                 font-size: 120%;
                 font-weight: bold;
@@ -307,7 +311,8 @@
                 { /* Selects every 3rd child of myList */}
                 .myList:nth-child(3n)
 
-                { /* Selects every 3rd child of myList, beginning with the 3rd */}
+                { /* Selects every 3rd child of myList, 
+                beginning with the 3rd */}
                 .myList:nth-child(3n + 3)
 
                 {/* Selects every even child of myList */}
